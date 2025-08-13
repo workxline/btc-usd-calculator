@@ -8,20 +8,20 @@
 </head>
 <body>
   <main class="card">
-    <h1>BTC → USD Calculator</h1>
+    <h1>💰 BTC → USD Calculator</h1>
 
     <div class="rate-row">
-      <div>Current rate:</div>
+      <div>Current BTC Price:</div>
       <div id="rate">Loading…</div>
     </div>
 
     <label class="field">
-      <span>BTC amount</span>
+      <span>BTC Amount</span>
       <input id="btc" type="number" step="any" min="0" value="1" />
     </label>
 
     <div class="field">
-      <span>USD</span>
+      <span>USD Value</span>
       <div id="usd" class="output">-</div>
     </div>
 
@@ -30,6 +30,10 @@
       <div id="error" class="error"></div>
     </div>
   </main>
+
+  <footer>
+    <p>Powered by <a href="https://www.coingecko.com/" target="_blank">CoinGecko API</a></p>
+  </footer>
 
   <script src="script.js" defer></script>
 </body>
