@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BTC → USD Live Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>BTC → USD Calculator</h1>
+
+    <div class="rate-row">
+      <div>Current rate:</div>
+      <div id="rate">Loading…</div>
+    </div>
+
+    <label class="field">
+      <span>BTC amount</span>
+      <input id="btc" type="number" step="any" min="0" value="1" />
+    </label>
+
+    <div class="field">
+      <span>USD</span>
+      <div id="usd" class="output">-</div>
+    </div>
+
+    <div class="meta">
+      <small id="last-updated"></small>
+      <div id="error" class="error"></div>
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
